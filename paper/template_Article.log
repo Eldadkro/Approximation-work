@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.9.22)  17 JUL 2022 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.9.22)  17 JUL 2022 20:50
 entering extended mode
 **./template_Article.tex
 (template_Article.tex
@@ -498,32 +498,28 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 \tf@toc=\write4
 \openout4 = `template_Article.toc'.
 
+
+[1
+
+{C:/Users/eldad/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
 9.
 
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [1
-
-{C:/Users/eldad/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (template_Artic
-le.aux)
-
-Package rerunfilecheck Warning: File `template_Article.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `template_Article.out':
-(rerunfilecheck)             Before: 6182891799598E693FB07413F5CB3F73;358
-(rerunfilecheck)             After:  224FE374F0118DE61C22D34FAED5907B;358.
+) [2]
+(template_Article.aux)
+Package rerunfilecheck Info: File `template_Article.out' has not changed.
+(rerunfilecheck)             Checksum: 224FE374F0118DE61C22D34FAED5907B;358.
  ) 
 Here is how much of TeX's memory you used:
- 11678 strings out of 478936
- 177986 string characters out of 2852771
- 657111 words of memory out of 3000000
+ 11679 strings out of 478936
+ 177992 string characters out of 2852771
+ 650111 words of memory out of 3000000
  29339 multiletter control sequences out of 15000+600000
  454982 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,6n,77p,292b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,6n,77p,292b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/eldad/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/eldad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -534,9 +530,9 @@ onts/type1/urw/symbol/usyr.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmb8a.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmr8a.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on template_Article.pdf (1 page, 86646 bytes).
+Output written on template_Article.pdf (2 pages, 87526 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
