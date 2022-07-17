@@ -1,0 +1,87 @@
+\documentclass[]{article}
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{subcaption}
+
+%\usepackage{biblatex}
+%\addbibresource{./bibli.bib}
+
+\usepackage{hyperref}
+\graphicspath{ {plots/} }
+\hypersetup{
+	linktocpage=true,
+	colorlinks=true,
+	linkcolor=red,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Kelly's Criterion},
+	pdfpagemode=FullScreen,
+	bookmarks=true,
+	breaklinks=true
+}
+
+\urlstyle{same}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{definition}{Definition}[]
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+
+
+%opening
+\title{Approximation Final Work}
+\author{Eldad Kronfeld}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Theoretical Question }
+\subsection{Background}
+\begin{definition}
+	Let $f$ be a continuous function on the interval $[a, b]$, and let $p$ be a polynomial approximation. An alternating set on $f, p$ is defined to be a sequence of points $x_{0}, ..., x_{n-1}$ such that:
+	\begin{itemize}
+	\item $a \leq x_0 <...<x_{n - 1}\leq b .$
+	\item $f(x_i) - p(x_i) = (-1)^i E \text{ for } i=0,1,...,n-1.$ 
+\end{itemize}
+where either $E=||f-p||$ or $E=-||f-p||$. The number $n$ is the length of the alternating set.
+\end{definition}
+
+
+\begin{thm}
+	\label{thm1}
+	Let $f \in C[a.b]$, and suppose that $p=p^{*}_{n}$ is the best approximation of $f$ out of $P_{n}[x]$, that is
+	\begin{equation}
+		||f-p||_{\infty} \le ||f-q||_{\infty} \text{ for all } q\in P_{n}[x] 
+	\end{equation}
+	Then, there is an alternating set for $f-p$ consisting of at least $n+2$  points.
+	
+\end{thm}
+\subsection{Question}
+prove that the best approximation polynomial is unique using Theorem \ref{thm1}. 
+\begin{proof}
+	The theorem is trivial if $f$ is polynomial of degree $\leq n$, so we assume that is not true. to show the uniqueness, suppose that both $p_n, q_n$ are polynomials of best approximation, and we will show that they are equal.
+	Note that $\frac{(p_n + q_n)}{2}$ is also a polynomial of best approximation because:
+	\begin{equation*}
+		 \norm{f-\frac{(p_n + q_n)}{2}} = \norm{\frac{(f - p_n)}{2} \frac{(f - q_n)}{2}} \leq \frac{1}{2}\norm{f-p_n} + 
+		 \frac{1}{2}\norm{f-q_n} = E
+	\end{equation*}
+\end{proof}
+
+
+\end{document}
