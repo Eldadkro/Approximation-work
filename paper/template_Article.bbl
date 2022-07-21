@@ -1,0 +1,59 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{convexOptimization}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9e2319a5ab99c290fe8eb9226c2598da}{%
+           family={Stephen\bibnamedelima Boyd},
+           familyi={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Lieven\bibnamedelima Vandenberghe},
+           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{fullhash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{bibnamehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{authorbibnamehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{authornamehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{authorfullhash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{8}
+      \field{isbn}{978-0-521-83378-3}
+      \field{title}{Convex Optimization}
+      \field{year}{2004}
+      \field{pages}{416\bibrangedash 418}
+      \range{pages}{3}
+      \verb{urlraw}
+      \verb https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf#page=430
+      \endverb
+      \verb{url}
+      \verb https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf#page=430
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

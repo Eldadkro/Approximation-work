@@ -13,8 +13,8 @@
 \usepackage{amsthm}
 \usepackage{subcaption}
 
-%\usepackage{biblatex}
-%\addbibresource{./bibli.bib}
+\usepackage{biblatex}
+\addbibresource{./bibli.bib}
 
 \usepackage{hyperref}
 \graphicspath{ {plots/} }
@@ -24,7 +24,7 @@
 	linkcolor=red,
 	filecolor=magenta,      
 	urlcolor=cyan,
-	pdftitle={Kelly's Criterion},
+	pdftitle={Approximation Work},
 	pdfpagemode=FullScreen,
 	bookmarks=true,
 	breaklinks=true
@@ -37,7 +37,7 @@
 \newtheorem{definition}{Definition}[]
 
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
-
+\newcommand{\Q}[0]{\textit{Q}}
 
 
 %opening
@@ -73,15 +73,46 @@ where either $E=||f-p||$ or $E=-||f-p||$. The number $n$ is the length of the al
 	
 \end{thm}
 \subsection{Question}
-prove that the best approximation polynomial is unique using Theorem \ref{thm1}. 
+prove that the best approximation polynomial is unique using Theorem (\ref{thm1}). 
 \begin{proof}
 	The theorem is trivial if $f$ is polynomial of degree $\leq n$, so we assume that is not true. to show the uniqueness, suppose that both $p_n, q_n$ are polynomials of best approximation, and we will show that they are equal.
 	Note that $\frac{(p_n + q_n)}{2}$ is also a polynomial of best approximation because:
 	\begin{equation*}
 		 \norm{f-\frac{(p_n + q_n)}{2}} = \norm{\frac{(f - p_n)}{2} \frac{(f - q_n)}{2}} \leq \frac{1}{2}\norm{f-p_n} + 
-		 \frac{1}{2}\norm{f-q_n} = E
+		 \frac{1}{2}\norm{f-q_n} = \pm E
 	\end{equation*}
+	therefore, there are $n+2$ points at which:
+	\begin{equation*}
+		\frac{f-p_n}{2}+\frac{f-q_n}{2}=\pm E
+	\end{equation*}
+	At each of those alternating points both $f-p_n$ and $f-q_n$ are equal to $\pm E$ then we can say that at each of the $n+2$ points:
+	\begin{equation*}
+		(f(x_i) - p_n(x_i)) - (f(x_i)-q_n(x_i)) = 0 \text{ for each of the alternating point, }i=1..n+2
+	\end{equation*}
+	Since both $p_n,q_n$ are polynomials of degree$\leq$n then they must be identical, therefore $p_n$ is unique.
 \end{proof}
 
+\section{Practical question}
+\subsection{Background}
+\begin{definition}
+	the \textbf{Chebyshev center}\cite{convexOptimization} of a bounded set $\textit{Q}\subseteq X$ with non-empty interior is the center of the smallest ball that encloses the entire of the set $\Q$,and the radius is:
+	\begin{equation*}
+		r=\inf\{\sup\{\norm{x-y}:x\in\Q\}:y\in X\}
+	\end{equation*}
+\end{definition}
+The Chebyshev center is described as the solution to the following optimization problem:
+\begin{equation}
+	\begin{aligned}
+		\min_{\hat{x},r} \quad &r \\
+		\text{s.t.}\quad &\norm{\hat{x} - x} \leq r \text{ for all }x\in\Q \\
+		\quad & r\geq 0
+	\end{aligned}
+\end{equation}
+
+
+\printbibliography[
+heading=bibintoc,
+title={References}
+]
 
 \end{document}
