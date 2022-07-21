@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'template_Article.blg'
-[158] biber-MSWIN64:340> INFO - === 
-[218] Biber.pm:415> INFO - Reading 'template_Article.bcf'
-[381] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[402] Biber.pm:4340> INFO - Processing section 0
-[417] Biber.pm:4531> INFO - Looking for bibtex format file './bibli.bib' for section 0
-[500] bibtex.pm:1689> INFO - LaTeX decoding ...
-[512] bibtex.pm:1494> INFO - Found BibTeX data source './bibli.bib'
-[586] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[587] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[587] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[587] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[594] bbl.pm:654> INFO - Writing 'template_Article.bbl' with encoding 'UTF-8'
-[595] bbl.pm:757> INFO - Output to template_Article.bbl
+[155] biber-MSWIN64:340> INFO - === 
+[203] Biber.pm:415> INFO - Reading 'template_Article.bcf'
+[363] Biber.pm:952> INFO - Found 2 citekeys in bib section 0
+[385] Biber.pm:4340> INFO - Processing section 0
+[400] Biber.pm:4531> INFO - Looking for bibtex format file './bibli.bib' for section 0
+[480] bibtex.pm:1689> INFO - LaTeX decoding ...
+[488] bibtex.pm:1494> INFO - Found BibTeX data source './bibli.bib'
+[567] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[567] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[567] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[567] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[576] bbl.pm:654> INFO - Writing 'template_Article.bbl' with encoding 'UTF-8'
+[577] bbl.pm:757> INFO - Output to template_Article.bbl

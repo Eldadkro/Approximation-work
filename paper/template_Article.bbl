@@ -19,6 +19,36 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{ParametricOptimization}{book}{}
+      \name{author}{1}{}{%
+        {{hash=20a7f9415b78476955e46d398bd2058f}{%
+           family={Amir},
+           familyi={A\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Birkhäuser Basel}%
+      }
+      \strng{namehash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{fullhash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{bibnamehash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{authorbibnamehash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{authornamehash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{authorfullhash}{20a7f9415b78476955e46d398bd2058f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{2}
+      \field{isbn}{9783034862554}
+      \field{series}{International Series of Numerical Mathematics}
+      \field{title}{Best simultaneous approximation (Chebyshev centers)}
+      \field{volume}{11}
+      \field{year}{1984}
+      \field{pages}{19\bibrangedash 35}
+      \range{pages}{17}
+    \endentry
     \entry{convexOptimization}{book}{}
       \name{author}{1}{}{%
         {{hash=9e2319a5ab99c290fe8eb9226c2598da}{%

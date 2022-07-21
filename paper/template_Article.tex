@@ -39,6 +39,9 @@
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\Q}[0]{\textit{Q}}
 
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+
 
 %opening
 \title{Approximation Final Work}
@@ -54,6 +57,7 @@
 \section{Theoretical Question }
 \subsection{Background}
 \begin{definition}
+	\label{definition1}
 	Let $f$ be a continuous function on the interval $[a, b]$, and let $p$ be a polynomial approximation. An alternating set on $f, p$ is defined to be a sequence of points $x_{0}, ..., x_{n-1}$ such that:
 	\begin{itemize}
 	\item $a \leq x_0 <...<x_{n - 1}\leq b .$
@@ -102,13 +106,50 @@ prove that the best approximation polynomial is unique using Theorem (\ref{thm1}
 \end{definition}
 The Chebyshev center is described as the solution to the following optimization problem:
 \begin{equation}
+	\label{OP1}
 	\begin{aligned}
 		\min_{\hat{x},r} \quad &r \\
 		\text{s.t.}\quad &\norm{\hat{x} - x} \leq r \text{ for all }x\in\Q \\
 		\quad & r\geq 0
 	\end{aligned}
 \end{equation}
+The optimization problem states that the radius r is the target function we would like to minimize is subjected to two types of constraints:
+\begin{itemize}
+	\item All the points of \Q are inside.
+	\item $r$ needs to be non-negative, as it is the radius.
+\end{itemize}
+Those it could also be described as the solution to the min-max problem.
+\begin{equation}
+	\label{OP2}
+	\argmin_{\hat{x}} \max_{x\in\Q} \space \norm{x-\hat{x}}
+\end{equation}
+which translate to the minimization of the distance of the furthest point from the center. Both of the optimization problems correspond to the first definition of Chebyshev centers.\\
+\textbf{Note:} other books and papers\cite{ParametricOptimization} define the Chebyshev centers differently which is not equivalent to the definition (\ref{definition1}).
+\begin{definition}
+	\label{definition2}
+	The \textbf{Chebyshev center} of a bounded set $\Q\subseteq X$ with non-empty interior is the center of the largest ball inscribed in $\Q$, and the center is:
+	\begin{equation}	
+		\hat{x}=\argmax_{x\in X}\space d(x,\Q) = \argmax_{x\in X} \space \min_{y\in \Q} \norm{\hat{x} - x}
+	\end{equation}
+\end{definition}
+The difference between the two definitions (\ref{definition1}) and (\ref{definition2}) is that definition (\ref{definition1}) denote the center that encloses the set $\Q$ like in figure (???). However the second definition (\ref{definition2}) states that the ball should be enclosed by the set $\Q$, like in figure (???) and not the other way around.
 
+\paragraph{Chebyshev center as a Linear programming problem \\}
+In contrast to the optimization problems above (\ref{OP1}, \ref{OP2}) the definition used in order to contrast the linear problem is (\ref{definition2}). In order to define the problem the set $\Q$ must be represented as an intersection of finitely many half-spaces. The intersection, if non-empty, creates a convex polytope, which is a geometrical object with flat faces created by the intersection of half-spaces as can be seen in figure \ref{Fig:polytope}.
+
+\begin{figure}[!h]
+	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1\linewidth,height=\textwidth]{Tetrahedron}
+		\caption{tetrahedron}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1\linewidth,height=\textwidth]{3dpoly}
+		\caption{3-dimensional convex polytope}
+	\end{subfigure}
+	\caption{Two examples for convex polytopes.}
+	\label{Fig:polytope}
+\end{figure}
 
 \printbibliography[
 heading=bibintoc,
