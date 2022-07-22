@@ -151,6 +151,23 @@ In contrast to the optimization problems above (\ref{OP1}, \ref{OP2}) the defini
 	\label{Fig:polytope}
 \end{figure}
 
+The Chebyshev center could be found by solving the following problem:
+\[\Q = \{ x\in \Re^n : Ax\leq b\}\]
+\begin{equation}
+	\label{LP}
+	\begin{aligned}
+		\min_{\hat{x},r} \quad &r \\
+		\text{s.t.}\quad & a_i \hat{x} + \norm{a_i}r \leq b_i \text{, for every half-space of } \Q \\
+		\quad & r\geq 0
+	\end{aligned}
+\end{equation}
+
+The optimization's target function is the same as before, but because the second definition (\ref{definition2}) is used in this formulation, then instead of minimizing the radius of the ball into the set $\Q$, we maximize the radius of the ball inside of it, while the constants require us that the ball and it's sphere should be inside of the convex polytope.
+ 
+\subsection{Experiments}
+
+asd
+
 \printbibliography[
 heading=bibintoc,
 title={References}
