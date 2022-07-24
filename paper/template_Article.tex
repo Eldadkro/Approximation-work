@@ -113,17 +113,17 @@ The Chebyshev center is described as the solution to the following optimization 
 		\quad & r\geq 0
 	\end{aligned}
 \end{equation}
-The optimization problem states that the radius r is the target function we would like to minimize is subjected to two types of constraints:
+The optimization problem states that the radius r is the target function we would like to minimize which is subjected to two types of constraints:
 \begin{itemize}
-	\item All the points of \Q are inside.
-	\item $r$ needs to be non-negative, as it is the radius.
+	\item All the points of $\Q$ are inside.
+	\item $r$ needs to be non-negative, as it is the radius of the ball.
 \end{itemize}
-Those it could also be described as the solution to the min-max problem.
+it could also be described as the solution to the min-max problem
 \begin{equation}
 	\label{OP2}
 	\argmin_{\hat{x}} \max_{x\in\Q} \space \norm{x-\hat{x}}
 \end{equation}
-which translate to the minimization of the distance of the furthest point from the center. Both of the optimization problems correspond to the first definition of Chebyshev centers.\\
+Which translate to the minimization of the distance of the furthest point from the center. Both of the optimization problems correspond to the first definition of Chebyshev centers.\\
 \textbf{Note:} other books and papers\cite{ParametricOptimization} define the Chebyshev centers differently which is not equivalent to the definition (\ref{definition1}).
 \begin{definition}
 	\label{definition2}
@@ -132,10 +132,10 @@ which translate to the minimization of the distance of the furthest point from t
 		\hat{x}=\argmax_{x\in X}\space d(x,\Q) = \argmax_{x\in X} \space \min_{y\in \Q} \norm{\hat{x} - x}
 	\end{equation}
 \end{definition}
-The difference between the two definitions (\ref{definition1}) and (\ref{definition2}) is that definition (\ref{definition1}) denote the center that encloses the set $\Q$ like in figure (???). However the second definition (\ref{definition2}) states that the ball should be enclosed by the set $\Q$, like in figure (???) and not the other way around.
+The difference between the two definitions (\ref{definition1}) and (\ref{definition2}) is that definition (\ref{definition1}) denote the center that encloses the set $\Q$ like in figure (\ref{exp1}). However the second definition (\ref{definition2}) states that the ball should be enclosed by the set $\Q$, like in figure (\ref{exp2}) and not the other way around.
 
 \paragraph{Chebyshev center as a Linear programming problem \\}
-In contrast to the optimization problems above (\ref{OP1}, \ref{OP2}) the definition used in order to contrast the linear problem is (\ref{definition2}). In order to define the problem the set $\Q$ must be represented as an intersection of finitely many half-spaces. The intersection, if non-empty, creates a convex polytope, which is a geometrical object with flat faces created by the intersection of half-spaces as can be seen in figure \ref{Fig:polytope}.
+In contrast to the optimization problems above (\ref{OP1}, \ref{OP2}) the definition used in order to construct the linear problem is definition (\ref{definition2}). In order to solve the problem, the set $\Q$ must be represented as an intersection of finitely many half-spaces. The intersection, if non-empty, creates a convex polytope, which is a geometrical object with flat faces created by the intersection of half-spaces as can be seen in figure \ref{Fig:polytope}.
 
 \begin{figure}[!h]
 	
@@ -166,12 +166,12 @@ The optimization's target function is the same as before, but because the second
  
 \subsection{Experiments}
 
-The conducted Experiments included two steps: randomizing data points in the 2d plane, creating and solving the optimization problem in order to find the Chebyshev center and it's radius.
-Randomizing the data was relatively simple process, I decided to randomize 20 points in the 2d plane as a proof of concept. The coordinates for each of the points elements was in the range of $[-25,25]$ in order to spread them in the plane, then I calculated the convex hull of the set of points, in order to create a set that fits both definition (\ref{definition1}) and definition (\ref{definition2}).
+The conducted Experiments included two steps: randomizing data points in the 2d plane, then constructing and solving the optimization problem in order to find the Chebyshev center and it's radius.
+Randomizing the data was relatively simple process, I decided to randomize 20 points in the 2d plane as a proof of concept. The coordinates for each of the points was in the range of $[-25,25]$ in order to spread them in the 2d plane, then I calculated the convex hull of the points, in order to create a set that fits both definition (\ref{definition1}) and definition (\ref{definition2}).
 
-\subsection{Experiment 1 - calculating the bounding circle of the convex hull}
+\subsubsection{Experiment 1 - calculating the bounding circle of the convex hull}
 
-The experiments took the the set of points (including the boundaries of the convex hull) and solved the problem defined in (\ref{OP1}) in order to find the enclosing circle of the set of points.
+The experiments took the the points (including the boundaries of the convex hull) and solved the problem defined in (\ref{OP1}) in order to find the enclosing circle of the set of points.
 
 \paragraph{The non-linear solver\\}
 To solve the problem I used the function \textit{fmincon} in matlab, which takes the objective function and the non-linear constraints and solves the problem using an algorithm called "\textbf{interior point}". The algorithm solves a sequence of approximated minimization problems that convert the inequalities into equality constraints because they are easier to solve (the exact technique that is used is called barrier function \cite{barrier}). Then the algorithm uses one of two main types of steps at each iteration:
@@ -179,14 +179,55 @@ To solve the problem I used the function \textit{fmincon} in matlab, which takes
 	\item A direction step, which attempts to solve the KKT equation via linear approximation, this is also called Newton step.
 	\item A CG (conjugate gradient) step, using trust region.
 \end{itemize}
-At first the algorithm attempts to take a direction step, if it cannot The algorithm attempts a CG step.
+At first the algorithm attempts to take a direction step, if it cannot The algorithm attempts a CG step. \newline
+
+The solver provided us a solution $(x,y,r)$ where $x,y$ are the coordinates of the Chebyshev center and $r$ is the radius of the circle that encompasses the set of points. As we can see in figure (\ref{exp1}) the solution encompasses both the points and the convex hull, while the area covered by the hull is $A_{hull}= 1266$ the area covered by the circle is $A_{circle} = 2441$ which is significantly larger then the actual convex hull.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\textwidth]{bounding}
+	\caption{The results for the first experiment on the plane with the randomized data}
+	\label{exp1}
+\end{figure}
+
+\subsubsection{Experiment 2 - calculating the inscribed circle on intersection of half-spaces}
+
+In order to find the inscribed ball as defined in (\ref{definition2}) the set $\Q$ needs to be a an intersection of half-spaces. Because of that fact I chose to create the data as points and calculate the hull as it is easy to look at the convex hull as the intersection of the half-spaces defined by the boundaries of it. In order to figure the inequalities of the half-spaces I used the formula for a straight line \[(x_2-x_1)y - (y_2-y_1)x = (x_2-x_1)y_1 - (y_2-y_1)x_1\] Then I determined the sign of the inequality using a point inside of the convex hull (the average of the vertices in the boundary).\newline
+
+After calculating the inequalities and producing the system $Ax \leq b$ that defines the convex hull, I created the constraints and target function as defined in (\ref{LP}). The results can be shown in figure (\ref{exp2}), in this experiment the area of the circle was $A_{circle} = 898.4991$ and as before the area of the convex hull was $A_{hull}= 1266$. 
 
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\textwidth]{bounded}
+	\caption{The results for the second experiment on the plane with the randomized data}
+	\label{exp2}
+\end{figure}
+
+\subsubsection{Experimental conclusion}
+even though the definitions are not equivalent, they both can be handy in different scenarios, when $100\%$ is mandatory even at the expense of fitting a bigger ball, then the ball in experiment 1 would be the one chosen, however in cases where bigger coverage may cost more money or include outlier data-points then the second ball from experiment 2 would be the better one.
+In figure (\ref{both}) we can see how much bigger is the bounding circle in comparison to the actual set and the inscribed circle, actually the bounding circle is $2.7$ times larger then the inscribed ball and around $2$ times larger then the area inside of the convex hull.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\textwidth]{both}
+	\caption{The results of both of the experiments together}
+	\label{both}
+\end{figure}
+
+\subsection{Practical use}
+
+Chebyshev centers have many practical uses, I will now point some of those out:
+\begin{enumerate}
+	\item \underline{\textbf{Parameter estimation}}- The Chebyshev center approach tries to find an estimator $\hat{x}$ for given points in feasibility set $\Q$ such that $\hat{x}$ minimizes the worst possible estimation error for the points in the set $\Q$
+	\item \underline{\textbf{Logistic planning}}- in cases where we want to place a warehouse or a logistics center that covers a region, but we want to minimize the longest distance between the logistics center and the furthest point in the region.
+	\item \underline{\textbf{wireless networking}}- in order to cover an area the best we need to place an antenna in a spot where it can reach most if not all of a certain region.
+\end{enumerate}
+
+\section{Conclusion}
+To conclude, Chebyshev center gives us a unique geometrical solution to the bounding sphere and coverage problem. It is also used in computer graphics, Machine learning and many other areas where estimation, grouping or simply trying to fill/encompass a region.
 
 
-\subsubsection{Experiment 1 - definition 1 on randomized data}
-
-asd
 
 \printbibliography[
 heading=bibintoc,
