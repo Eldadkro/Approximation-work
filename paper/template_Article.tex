@@ -63,7 +63,7 @@
 	\item $a \leq x_0 <...<x_{n - 1}\leq b .$
 	\item $f(x_i) - p(x_i) = (-1)^i E \text{ for } i=0,1,...,n-1.$ 
 \end{itemize}
-where either $E=||f-p||$ or $E=-||f-p||$. The number $n$ is the length of the alternating set.
+Where either $E=||f-p||$ or $E=-||f-p||$. The number $n$ is the length of the alternating set.
 \end{definition}
 
 
@@ -77,15 +77,15 @@ where either $E=||f-p||$ or $E=-||f-p||$. The number $n$ is the length of the al
 	
 \end{thm}
 \subsection{Question}
-prove that the best approximation polynomial is unique using Theorem (\ref{thm1}). 
+Prove that the best approximation polynomial is unique using Theorem (\ref{thm1}). 
 \begin{proof}
-	The theorem is trivial if $f$ is polynomial of degree $\leq n$, so we assume that is not true. to show the uniqueness, suppose that both $p_n, q_n$ are polynomials of best approximation, and we will show that they are equal.
+	The theorem is trivial if $f$ is polynomial of degree $\leq n$, so we assume that is not true. To show the uniqueness, suppose that both $p_n, q_n$ are polynomials of best approximation, and we will show that they are equal.
 	Note that $\frac{(p_n + q_n)}{2}$ is also a polynomial of best approximation because:
 	\begin{equation*}
 		 \norm{f-\frac{(p_n + q_n)}{2}} = \norm{\frac{(f - p_n)}{2} \frac{(f - q_n)}{2}} \leq \frac{1}{2}\norm{f-p_n} + 
 		 \frac{1}{2}\norm{f-q_n} = \pm E
 	\end{equation*}
-	therefore, there are $n+2$ points at which:
+	Therefore, there are $n+2$ points at which:
 	\begin{equation*}
 		\frac{f-p_n}{2}+\frac{f-q_n}{2}=\pm E
 	\end{equation*}
@@ -118,7 +118,7 @@ The optimization problem states that the radius r is the target function we woul
 	\item All the points of $\Q$ are inside.
 	\item $r$ needs to be non-negative, as it is the radius of the ball.
 \end{itemize}
-it could also be described as the solution to the min-max problem
+It could also be described as the solution to the min-max problem
 \begin{equation}
 	\label{OP2}
 	\argmin_{\hat{x}} \max_{x\in\Q} \space \norm{x-\hat{x}}
@@ -132,7 +132,7 @@ Which translate to the minimization of the distance of the furthest point from t
 		\hat{x}=\argmax_{x\in X}\space d(x,\Q) = \argmax_{x\in X} \space \min_{y\in \Q} \norm{\hat{x} - x}
 	\end{equation}
 \end{definition}
-The difference between the two definitions (\ref{definition1}) and (\ref{definition2}) is that definition (\ref{definition1}) denote the center that encloses the set $\Q$ like in figure (\ref{exp1}). However the second definition (\ref{definition2}) states that the ball should be enclosed by the set $\Q$, like in figure (\ref{exp2}) and not the other way around.
+The difference between the two definitions (\ref{definition1}) and (\ref{definition2}) is that definition (\ref{definition1}) denotes the center that encloses the set $\Q$ like in figure (\ref{exp1}). However the second definition (\ref{definition2}) states that the ball should be enclosed by the set $\Q$, like in figure (\ref{exp2}) and not the other way around.
 
 \paragraph{Chebyshev center as a Linear programming problem \\}
 In contrast to the optimization problems above (\ref{OP1}, \ref{OP2}) the definition used in order to construct the linear problem is definition (\ref{definition2}). In order to solve the problem, the set $\Q$ must be represented as an intersection of finitely many half-spaces. The intersection, if non-empty, creates a convex polytope, which is a geometrical object with flat faces created by the intersection of half-spaces as can be seen in figure \ref{Fig:polytope}.
@@ -205,7 +205,7 @@ After calculating the inequalities and producing the system $Ax \leq b$ that def
 \end{figure}
 
 \subsubsection{Experimental conclusion}
-even though the definitions are not equivalent, they both can be handy in different scenarios, when $100\%$ is mandatory even at the expense of fitting a bigger ball, then the ball in experiment 1 would be the one chosen, however in cases where bigger coverage may cost more money or include outlier data-points then the second ball from experiment 2 would be the better one.
+Even though the definitions are not equivalent, they both can be handy in different scenarios, when $100\%$ is mandatory even at the expense of fitting a bigger ball, then the ball in experiment 1 would be the one chosen, however in cases where bigger coverage may cost more money or include outlier data-points then the second ball from experiment 2 would be the better one.
 In figure (\ref{both}) we can see how much bigger is the bounding circle in comparison to the actual set and the inscribed circle, actually the bounding circle is $2.7$ times larger then the inscribed ball and around $2$ times larger then the area inside of the convex hull.
 
 \begin{figure}[!h]
@@ -219,7 +219,7 @@ In figure (\ref{both}) we can see how much bigger is the bounding circle in comp
 
 Chebyshev centers have many practical uses, I will now point some of those out:
 \begin{enumerate}
-	\item \underline{\textbf{Parameter estimation}}- The Chebyshev center approach tries to find an estimator $\hat{x}$ for given points in feasibility set $\Q$ such that $\hat{x}$ minimizes the worst possible estimation error for the points in the set $\Q$
+	\item \underline{\textbf{Parameter estimation}}- The Chebyshev center approach tries to find an estimator $\hat{x}$ for given points in feasibility set $\Q$ such that $\hat{x}$ minimizes the worst possible estimation error for the points in the set $\Q$.
 	\item \underline{\textbf{Logistic planning}}- in cases where we want to place a warehouse or a logistics center that covers a region, but we want to minimize the longest distance between the logistics center and the furthest point in the region.
 	\item \underline{\textbf{wireless networking}}- in order to cover an area the best we need to place an antenna in a spot where it can reach most if not all of a certain region.
 \end{enumerate}
