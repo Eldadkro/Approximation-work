@@ -1,0 +1,200 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{ParametricOptimization}{book}{}
+      \name{author}{1}{}{%
+        {{hash=20a7f9415b78476955e46d398bd2058f}{%
+           family={Amir},
+           familyi={A\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Birkhäuser Basel}%
+      }
+      \strng{namehash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{fullhash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{bibnamehash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{authorbibnamehash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{authornamehash}{20a7f9415b78476955e46d398bd2058f}
+      \strng{authorfullhash}{20a7f9415b78476955e46d398bd2058f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{2}
+      \field{isbn}{9783034862554}
+      \field{series}{International Series of Numerical Mathematics}
+      \field{title}{Best simultaneous approximation (Chebyshev centers)}
+      \field{volume}{11}
+      \field{year}{1984}
+      \field{pages}{19\bibrangedash 35}
+      \range{pages}{17}
+    \endentry
+    \entry{doi:10.1137/060656784}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7e285058a4af1ce645d910e3951d7b82}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d147b0cce00b122576f734fc8dc462a7}{%
+           family={Eldar},
+           familyi={E\bibinitperiod},
+           given={Yonina\bibnamedelima C.},
+           giveni={Y\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5b210b2fb1521d358632a6ee539702b}
+      \strng{fullhash}{b5b210b2fb1521d358632a6ee539702b}
+      \strng{bibnamehash}{b5b210b2fb1521d358632a6ee539702b}
+      \strng{authorbibnamehash}{b5b210b2fb1521d358632a6ee539702b}
+      \strng{authornamehash}{b5b210b2fb1521d358632a6ee539702b}
+      \strng{authorfullhash}{b5b210b2fb1521d358632a6ee539702b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Journal on Matrix Analysis and Applications}
+      \field{number}{2}
+      \field{title}{Regularization in Regression with Bounded Noise: A Chebyshev Center Approach}
+      \field{volume}{29}
+      \field{year}{2007}
+      \field{pages}{606\bibrangedash 625}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1137/060656784
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1137/060656784
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1137/060656784
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1137/060656784
+      \endverb
+    \endentry
+    \entry{barrier}{book}{}
+      \name{author}{1}{}{%
+        {{hash=87aba2d03aa1cf53df0f2b8c23ba1725}{%
+           family={Byrd\bibnamedelima R.},
+           familyi={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           suffix={Gilbert\bibnamedelimb J.\bibnamedelimi \&\bibnamedelima Nocedal},
+           suffixi={G\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim \\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{fullhash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{bibnamehash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{authorbibnamehash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{authornamehash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{authorfullhash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{1}
+      \field{series}{Mathematical Programming}
+      \field{title}{A Trust Region Method Based on Interior Point Techniques for Nonlinear Programming}
+      \field{volume}{89}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{149\bibrangedash 185}
+      \range{pages}{37}
+    \endentry
+    \entry{4471880}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d147b0cce00b122576f734fc8dc462a7}{%
+           family={Eldar},
+           familyi={E\bibinitperiod},
+           given={Yonina\bibnamedelima C.},
+           giveni={Y\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7e285058a4af1ce645d910e3951d7b82}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=009141d6de34d70316721834af7f1e0b}{%
+           family={Teboulle},
+           familyi={T\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{953241fc02a7e76c2d9a9944ecdc9414}
+      \strng{fullhash}{953241fc02a7e76c2d9a9944ecdc9414}
+      \strng{bibnamehash}{953241fc02a7e76c2d9a9944ecdc9414}
+      \strng{authorbibnamehash}{953241fc02a7e76c2d9a9944ecdc9414}
+      \strng{authornamehash}{953241fc02a7e76c2d9a9944ecdc9414}
+      \strng{authorfullhash}{953241fc02a7e76c2d9a9944ecdc9414}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Signal Processing}
+      \field{number}{4}
+      \field{title}{A Minimax Chebyshev Estimator for Bounded Error Estimation}
+      \field{volume}{56}
+      \field{year}{2008}
+      \field{pages}{1388\bibrangedash 1397}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TSP.2007.908945
+      \endverb
+    \endentry
+    \entry{convexOptimization}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9e2319a5ab99c290fe8eb9226c2598da}{%
+           family={Stephen\bibnamedelima Boyd},
+           familyi={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Lieven\bibnamedelima Vandenberghe},
+           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{fullhash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{bibnamehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{authorbibnamehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{authornamehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{authorfullhash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{8}
+      \field{isbn}{978-0-521-83378-3}
+      \field{title}{Convex Optimization}
+      \field{year}{2004}
+      \field{pages}{416\bibrangedash 418}
+      \range{pages}{3}
+      \verb{urlraw}
+      \verb https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf#page=430
+      \endverb
+      \verb{url}
+      \verb https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf#page=430
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.9.22)  24 JUL 2022 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.9.22)  24 JUL 2022 22:50
 entering extended mode
-**./template_Article.tex
-(template_Article.tex
+**"./Approximation work.tex"
+("Approximation work.tex"
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-08-27>
 (C:\Users\eldad\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -579,14 +579,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip77
 )
-Package hyperref Info: Option `linktocpage' set `true' on input line 31.
-Package hyperref Info: Option `colorlinks' set `true' on input line 31.
+Package hyperref Info: Option `linktocpage' set `true' on input line 30.
+Package hyperref Info: Option `colorlinks' set `true' on input line 30.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 31.
+(hyperref)                setting the option has no effect on input line 30.
 
-Package hyperref Info: Option `breaklinks' set `true' on input line 31.
+Package hyperref Info: Option `breaklinks' set `true' on input line 30.
 \c@thm=\count410
 \c@definition=\count411
 
@@ -595,7 +595,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count412
 \@quotereset=\count413
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 51
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 50
 .
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -605,27 +605,27 @@ tex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count414
 \l__pdf_internal_box=\box52
-) (template_Article.aux)
-\openout1 = `template_Article.aux'.
+) ("Approximation work.aux")
+\openout1 = `"Approximation work.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 
 (C:\Users\eldad\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -682,13 +682,13 @@ Package: xparse 2021-08-27 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
-\openout3 = `template_Article.bcf'.
+\openout3 = `"Approximation work.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'template_Article.bbl' found.
- (template_Article.bbl)
-Package biblatex Info: Reference section=0 on input line 51.
-Package biblatex Info: Reference segment=0 on input line 51.
+Package biblatex Info: ... file '"Approximation work".bbl' found.
+ ("Approximation work.bbl")
+Package biblatex Info: Reference section=0 on input line 50.
+Package biblatex Info: Reference segment=0 on input line 50.
 
 (C:\Users\eldad\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
@@ -698,7 +698,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-Package hyperref Info: Link coloring ON on input line 51.
+Package hyperref Info: Link coloring ON on input line 50.
  (C:\Users\eldad\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -710,51 +710,51 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count421
 )
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
-LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
-(template_Article.out) (template_Article.out)
+("Approximation work.out") ("Approximation work.out")
 \@outlinefile=\write4
-\openout4 = `template_Article.out'.
+\openout4 = `"Approximation work.out"'.
 
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 54.
+ 53.
 
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 54.
+ 53.
 
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 54.
+ 53.
 
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 54.
+ 53.
 
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
-4.
+3.
 
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
- (template_Article.toc
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+ ("Approximation work.toc"
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
@@ -763,14 +763,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 )
 \tf@toc=\write5
-\openout5 = `template_Article.toc'.
+\openout5 = `"Approximation work.toc"'.
 
-
-[1
+ [1
 
 {C:/Users/eldad/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-3.
+2.
 
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -778,15 +777,15 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 <plots//Tetrahedron.png, id=98, 677.53125pt x 677.53125pt>
 File: plots//Tetrahedron.png Graphic file (type png)
 <use plots//Tetrahedron.png>
-Package pdftex.def Info: plots//Tetrahedron.png  used on input line 143.
+Package pdftex.def Info: plots//Tetrahedron.png  used on input line 142.
 (pdftex.def)             Requested size: 172.49422pt x 172.49422pt.
 <plots//3dpoly.png, id=100, 969.6225pt x 902.37125pt>
 File: plots//3dpoly.png Graphic file (type png)
 <use plots//3dpoly.png>
-Package pdftex.def Info: plots//3dpoly.png  used on input line 147.
+Package pdftex.def Info: plots//3dpoly.png  used on input line 146.
 (pdftex.def)             Requested size: 172.49757pt x 172.49876pt.
 
-Overfull \hbox (1.90002pt too wide) in paragraph at lines 142--150
+Overfull \hbox (1.90002pt too wide) in paragraph at lines 141--149
 []$[]$ $[]$ 
  []
 
@@ -794,53 +793,53 @@ Overfull \hbox (1.90002pt too wide) in paragraph at lines 142--150
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3] [4 <./plots//Tetrahedron.png> <./plots//3dpoly.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 <plots//bounding.png, id=130, 421.575pt x 316.0608pt>
 File: plots//bounding.png Graphic file (type png)
 <use plots//bounding.png>
-Package pdftex.def Info: plots//bounding.png  used on input line 188.
+Package pdftex.def Info: plots//bounding.png  used on input line 187.
 (pdftex.def)             Requested size: 345.0pt x 258.6555pt.
 
-Overfull \hbox (1.56624pt too wide) in paragraph at lines 193--193
+Overfull \hbox (1.56624pt too wide) in paragraph at lines 192--192
 []\T1/ptm/b/n/10 Experiment 2 - cal-cu-lat-ing the in-scribed cir-cle on in-ter
 -sec-tion of half-spaces 
  []
 
 [5 <./plots//bounding.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
 <plots//bounded.png, id=140, 421.575pt x 316.0608pt>
 File: plots//bounded.png Graphic file (type png)
 <use plots//bounded.png>
-Package pdftex.def Info: plots//bounded.png  used on input line 202.
+Package pdftex.def Info: plots//bounded.png  used on input line 201.
 (pdftex.def)             Requested size: 345.0pt x 258.6555pt.
 [6 <./plots//bounded.png (PNG copy)>]
 <plots//both.png, id=146, 421.575pt x 316.0608pt>
 File: plots//both.png Graphic file (type png)
 <use plots//both.png>
-Package pdftex.def Info: plots//both.png  used on input line 213.
+Package pdftex.def Info: plots//both.png  used on input line 212.
 (pdftex.def)             Requested size: 345.0pt x 258.6555pt.
  [7 <./plots//both.png (PNG copy)>]
-[8] (template_Article.aux)
-Package rerunfilecheck Info: File `template_Article.out' has not changed.
+[8] ("Approximation work.aux")
+Package rerunfilecheck Info: File `"Approximation work".out' has not changed.
 (rerunfilecheck)             Checksum: 4993C1DABE43D7173C2B50F967722D30;2122.
-Package logreq Info: Writing requests to 'template_Article.run.xml'.
-\openout1 = `template_Article.run.xml'.
+Package logreq Info: Writing requests to '"Approximation work".run.xml'.
+\openout1 = `"Approximation work.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19004 strings out of 478936
- 322943 string characters out of 2852771
- 1055153 words of memory out of 3000000
- 36564 multiletter control sequences out of 15000+600000
+ 19014 strings out of 478936
+ 323378 string characters out of 2852771
+ 1055266 words of memory out of 3000000
+ 36572 multiletter control sequences out of 15000+600000
  468976 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,9n,77p,751b,1750s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,9n,77p,755b,1750s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/eldad/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/eldad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -852,9 +851,9 @@ nts/type1/urw/times/utmb8a.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmbi8a.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmr8a.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on template_Article.pdf (8 pages, 496700 bytes).
+Output written on "Approximation work.pdf" (8 pages, 499592 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
+ 222 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
  122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
