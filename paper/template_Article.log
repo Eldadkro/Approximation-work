@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.9.22)  22 JUL 2022 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.9.22)  24 JUL 2022 20:05
 entering extended mode
 **./template_Article.tex
 (template_Article.tex
@@ -775,12 +775,12 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [2]
-<plots//Tetrahedron.png, id=71, 677.53125pt x 677.53125pt>
+<plots//Tetrahedron.png, id=81, 677.53125pt x 677.53125pt>
 File: plots//Tetrahedron.png Graphic file (type png)
 <use plots//Tetrahedron.png>
 Package pdftex.def Info: plots//Tetrahedron.png  used on input line 143.
 (pdftex.def)             Requested size: 172.49422pt x 172.49422pt.
-<plots//3dpoly.png, id=73, 969.6225pt x 902.37125pt>
+<plots//3dpoly.png, id=83, 969.6225pt x 902.37125pt>
 File: plots//3dpoly.png Graphic file (type png)
 <use plots//3dpoly.png>
 Package pdftex.def Info: plots//3dpoly.png  used on input line 147.
@@ -793,18 +793,19 @@ Overfull \hbox (1.90002pt too wide) in paragraph at lines 142--150
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3] [4 <./plots//Tetrahedron.png> <./plots//3dpoly.png>] (template_Article.aux)
+[3] [4 <./plots//Tetrahedron.png> <./plots//3dpoly.png>] [5]
+(template_Article.aux)
 Package rerunfilecheck Info: File `template_Article.out' has not changed.
-(rerunfilecheck)             Checksum: F861736E0E2CE7861712F6E8C91FC018;807.
+(rerunfilecheck)             Checksum: C56CB01651DD3D064BDF00518B12F945;1537.
 Package logreq Info: Writing requests to 'template_Article.run.xml'.
 \openout1 = `template_Article.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18944 strings out of 478936
- 321906 string characters out of 2852771
- 1053821 words of memory out of 3000000
- 36521 multiletter control sequences out of 15000+600000
+ 18953 strings out of 478936
+ 322085 string characters out of 2852771
+ 1054864 words of memory out of 3000000
+ 36525 multiletter control sequences out of 15000+600000
  468976 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,9n,77p,751b,1750s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -819,9 +820,9 @@ nts/type1/urw/times/utmb8a.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmbi8a.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmr8a.pfb><C:/Users/eldad/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on template_Article.pdf (4 pages, 385548 bytes).
+Output written on template_Article.pdf (5 pages, 392385 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 165 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

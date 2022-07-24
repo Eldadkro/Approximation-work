@@ -166,6 +166,26 @@ The optimization's target function is the same as before, but because the second
  
 \subsection{Experiments}
 
+The conducted Experiments included two steps: randomizing data points in the 2d plane, creating and solving the optimization problem in order to find the Chebyshev center and it's radius.
+Randomizing the data was relatively simple process, I decided to randomize 20 points in the 2d plane as a proof of concept. The coordinates for each of the points elements was in the range of $[-25,25]$ in order to spread them in the plane, then I calculated the convex hull of the set of points, in order to create a set that fits both definition (\ref{definition1}) and definition (\ref{definition2}).
+
+\subsection{Experiment 1 - calculating the bounding circle of the convex hull}
+
+The experiments took the the set of points (including the boundaries of the convex hull) and solved the problem defined in (\ref{OP1}) in order to find the enclosing circle of the set of points.
+
+\paragraph{The non-linear solver\\}
+To solve the problem I used the function \textit{fmincon} in matlab, which takes the objective function and the non-linear constraints and solves the problem using an algorithm called "\textbf{interior point}". The algorithm solves a sequence of approximated minimization problems that convert the inequalities into equality constraints because they are easier to solve (the exact technique that is used is called barrier function \cite{barrier}). Then the algorithm uses one of two main types of steps at each iteration:
+\begin{itemize}
+	\item A direction step, which attempts to solve the KKT equation via linear approximation, this is also called Newton step.
+	\item A CG (conjugate gradient) step, using trust region.
+\end{itemize}
+At first the algorithm attempts to take a direction step, if it cannot The algorithm attempts a CG step.
+
+
+
+
+\subsubsection{Experiment 1 - definition 1 on randomized data}
+
 asd
 
 \printbibliography[

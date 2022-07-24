@@ -49,6 +49,35 @@
       \field{pages}{19\bibrangedash 35}
       \range{pages}{17}
     \endentry
+    \entry{barrier}{book}{}
+      \name{author}{1}{}{%
+        {{hash=87aba2d03aa1cf53df0f2b8c23ba1725}{%
+           family={Byrd\bibnamedelima R.},
+           familyi={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           suffix={Gilbert\bibnamedelimb J.\bibnamedelimi \&\bibnamedelima Nocedal},
+           suffixi={G\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim \\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{fullhash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{bibnamehash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{authorbibnamehash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{authornamehash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \strng{authorfullhash}{87aba2d03aa1cf53df0f2b8c23ba1725}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{1}
+      \field{series}{Mathematical Programming}
+      \field{title}{A Trust Region Method Based on Interior Point Techniques for Nonlinear Programming}
+      \field{volume}{89}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{149\bibrangedash 185}
+      \range{pages}{37}
+    \endentry
     \entry{convexOptimization}{book}{}
       \name{author}{1}{}{%
         {{hash=9e2319a5ab99c290fe8eb9226c2598da}{%
